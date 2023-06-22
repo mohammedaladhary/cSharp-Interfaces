@@ -1,4 +1,6 @@
-﻿namespace interfaces
+﻿using static interfaces.ISquare;
+
+namespace interfaces
 {
     internal class Program
     {
@@ -13,6 +15,10 @@
             Console.WriteLine("Circle - Perimeter: " + circle.getPerimeter());
             Console.WriteLine("Rectangle - Perimeter: " + rectangle.getPerimeter());
 
+            Square square = new Square(3);
+            Square square1 = new Square(2);
+
+            Console.WriteLine(square.CompareTo(square1));
         }
     }
 }
