@@ -36,7 +36,8 @@ namespace interfaces
                 Console.WriteLine(person);
             }
 
-
+            Car car = new Car();
+            car.Accelerate(6);
         }
     }
 }
